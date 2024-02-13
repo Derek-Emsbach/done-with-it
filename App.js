@@ -1,13 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView } from "react-native";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, Image, SafeAreaView } from "react-native";
 
 export default function App() {
-	const handlePress = () => console.log("Text Pressed");
+  console.log(require("./assets/icon.png"))
 	return (
 		<SafeAreaView style={styles.container}>
-			<Text onPress={handlePress}>Done With It App</Text>
-			<StatusBar style="auto" />
+			<Text>Done With It App!</Text>
+			{/* <Image source={require('./assets/icon.png')} /> */}
 		</SafeAreaView>
 	);
 }
